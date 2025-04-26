@@ -20,3 +20,12 @@ for i, job_title in enumerate(job_titles):
 ## Results
 
 ![Visualisation of Top skills for Data nerds](Actual_project/Images/skill_demand_all_data_roles.png)
+
+## Insights
+
+- Python is a versatile skill, highly demanded across all three roles, but most prominently across Data Scientist (72%) and data Engineers (65%).
+- SQL is the most requested skill for Data Analyst and Data Scientists, with in in over half the job postings for both roles. For Data engineers, Python is the most sought-after skill, appearing in 68% of the postings.
+- Data Engineers require more specialised technical skills (AWS, Azure, Spark) compared to Data Analyst and Data Scientists who are expected to be more proficient in more general data managment and analysis tools (Excel, Tableau) 
+
+
+
