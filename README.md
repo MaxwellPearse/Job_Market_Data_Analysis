@@ -27,5 +27,36 @@ for i, job_title in enumerate(job_titles):
 - SQL is the most requested skill for Data Analyst and Data Scientists, with in in over half the job postings for both roles. For Data engineers, Python is the most sought-after skill, appearing in 68% of the postings.
 - Data Engineers require more specialised technical skills (AWS, Azure, Spark) compared to Data Analyst and Data Scientists who are expected to be more proficient in more general data managment and analysis tools (Excel, Tableau) 
 
+## 2. How are in-demand skills trending for data analysts?
 
+### Visualise Data
+
+```Python 
+from matplotlib.ticker import PercentFormatter
+
+df_plot = df_DA_US_percent.iloc[:,:5]
+sns.lineplot(data=df_plot, dashes=False, palette="tab10")
+
+for i in range(5):
+    plt.text(11.2, df_plot.iloc[-2,i], df_plot.columns[i])
+
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+```
+
+![Trending Top Skills for Data Analyst in the US](Actual_project/Images/skill_trend_DA.png)
+
+## Insights
+
+- SQL remained the most consistently demanded skill thoughout the year, although it shows a gradual decrease in demand.
+- Tableau and Python seem relatively stable, througthout the year
+
+## 3. How well do jobs and skills pay for data analysts?
+
+### Salary Analysis for Data Nerds
+
+![Salary Distributions of Data Jobs in the US](Actual_project/Images/boxplot_job_titles.png)
+
+## Insights
+- Data Scientists/Engineers are generally paid more than Data Analysts(inclusing Senior Data Analysts)
 
